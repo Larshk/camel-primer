@@ -1,0 +1,10 @@
+*.class
+.project
+.idea
+*.iml
+rebel.xml
+gc.log
+*~
+**/.gradle/
+**/build/
+**/out/

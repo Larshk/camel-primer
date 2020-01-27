@@ -1,0 +1,25 @@
+buildscript {
+  dependencies {
+    classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.1.9.RELEASE'
+  }
+}
+
+plugins {
+  id 'java'
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+repositories {
+  mavenCentral()
+}
+
+group 'com.lakrisoft.camel-primer'
+version '1.0.0'
+
+dependencies {
+  implementation enforcedPlatform("org.apache.camel:camel-bom:$camelVersion")
+  implementation 'org.springframework.boot:spring-boot-starter'
+  implementation 'org.apache.camel.springboot:camel-spring-boot-starter'
+}
